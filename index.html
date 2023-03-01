@@ -1,0 +1,1343 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<title>Websit bán hàng</title>
+
+<style>
+    .nav-item a:hover {
+        border-bottom: #fff 1px solid !important;
+    }   
+
+    li {
+        list-style: none;
+    }
+
+    /* start event */
+    .frame-event a {
+        color: rgba(0, 0, 0, 0.9);
+        font-family: "Lora", Georgia, serif;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width:1200px) {
+
+
+        .content-events {
+            position: relative;
+        }
+
+        .img-events {
+            position: absolute;
+
+        }
+
+        .event-wrap {
+            box-shadow: 5px 5px;
+            border: #000000 1px solid;
+            background-color: #fff;
+        }
+    }
+
+    @media screen and (min-width:600px) and (max-width: 1200px) {
+        .heading-section h2 {
+            color: #000000 !important;
+        }
+
+        .heading-section span {
+            color: hsl(0, 2%, 62%) !important;
+        }
+
+        .event-wrap {
+            box-shadow: 5px 5px;
+            border: #000000 1px solid;
+            background-color: #fff;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        .heading-section h2 {
+            color: #000000 !important;
+        }
+
+        .heading-section span {
+            color: hsl(0, 2%, 62%) !important;
+        }
+
+        .event-wrap {
+            box-shadow: 5px 5px;
+            border: #000000 1px solid;
+            background-color: #fff;
+        }
+
+        .margin-xs-event {
+            margin-left: 40px;
+        }
+    }
+
+    /* end event */
+    /* start donate charity */
+    .progress-bar {
+        background-color: #ffd615;
+    }
+
+    .progress-btn {
+        background-color: #ffd615;
+        border-radius: 60px;
+        border: none;
+    }
+
+    .frame-danatebanner-child {
+        position: relative;
+        margin-bottom: 170px !important;
+    }
+
+    .frame-danatebanner {
+        margin-top: 400px;
+        position: absolute;
+        z-index: 100;
+        top: -250px;
+        right: 100px;
+        margin-bottom: 100px !important;
+    }
+
+    .frame-producedonate {
+        margin-bottom: 270px !important;
+    }
+
+    /* end donate charity  */
+    /* start blog */
+    .p-blog-parent {
+        position: relative;
+    }
+
+    .p-blog-child {
+        position: absolute;
+        top: 0;
+        z-index: 100;
+    }
+
+    .two-blog {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .m-xs-blog {
+        padding-top: 100px !important;
+        padding-bottom: 150px !important;
+    }
+
+    /* end blog */
+    /* start contact */
+    .color-contact i {
+        color: #ffd615;
+    }
+
+    /* end contact */
+    /* start gallery */
+
+    /* end gallery */
+</style>
+</head>
+
+<body>
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid font-vibe-banner">
+            <a class="navbar-brand ps-3 pt-2" href="#"><i class="fa-solid fa-book-journal-whills"></i> Christian</a>
+            <div class="d-flex me-3">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="تبديل التنقل">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <p class="text-white pt-3 ps-2 hd-text-nav">MENU</p>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 bg-dark">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sermons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Cause</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pastor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar 
+    start slide -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="slide-media">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    class="rounded-circle" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="img-slide col-12 col-md-12"
+                            style="background-image: url(./assets/img/images/bg_1.jpg); height: 100vh; opacity: 0.9;">
+                            <div class="carousel-caption top-50 start-40">
+                                <h5 class="text-dark ">Christian Church</h5>
+                                <h1 class="mb-4 text-dark col-xl-6">Following <span
+                                        style="color: #ffd615; font-weight: bolder;">Jesus</span> wherever we are</h1>
+                                <p class="text-dark col-xl-9">Far far away, behind the word mountains, far from the
+                                    countries
+                                    Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.</p>
+                                <p class="col-xl-9">
+                                    <a href="#" class="btn btn-primary py-2 px-4">Be part of us</a>
+                                    <a href="#" class="btn btn-primary btn-outline-primary py-2 px-4">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="img-slide col-12 col-md-12"
+                            style="background-image: url(./assets/img/images/bg_2.jpg); height: 100vh; opacity: 0.9;">
+                            <div class="carousel-caption top-50 start-40">
+                                <h5 class="text-light ">Christian Church</h5>
+                                <h1 class="mb-4 text-light col-xl-6">We <span
+                                        style="color: #ffd615; font-weight: bolder;">Love</span> God, We Believe in God
+                                </h1>
+                                <p class="text-light col-xl-9">Far far away, behind the word mountains, far from the
+                                    countries
+                                    Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.</p>
+                                <p class="col-xl-9">
+                                    <a href="#" class="btn btn-primary py-2 px-4">Be part of us</a>
+                                    <a href="#" class="btn btn-primary btn-outline-primary py-2 px-4">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Welcome -->
+    <div class="container-fluid px-0">
+        <div class="row d-md-flex text-wrapper">
+            <div class="img-welcome img col-xl-6 col-md-6 col-12"
+                style="background-image: url(./assets/img/images/about.jpg); height: 100vh;">
+            </div>
+            <div class="content-welcome col-xl-6 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <div class="change-bullet-color col-9">
+                    <h3 class="heading">Welcome to <span style="color: #ffd615; font-size: 30px;">Christian</span>
+                        Church</h3>
+                    <div class="fade-font">
+                        <p style="font-size: 16px;">Far far away,<strong>creative</strong> behind the word mountains,
+                            far from the countries
+                            Vokalia and
+                            Consonantia, there live the <strong>success</strong> blind texts. Separated they live in
+                            Bookmarksgrove
+                        </p>
+                        <p style="font-size: 16px;">A small river named Duden flows by their place and supplies it with
+                            the necessary regelialia.
+                            It is a
+                            paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <ul class="" style="font-size: 16px;">
+                            <li><i class="fa-solid fa-circle"></i> Even the all-powerful Pointing</li>
+                            <li><i class="fa-solid fa-circle"></i> Behind the word mountains</li>
+                            <li><i class="fa-solid fa-circle"></i> Separated they live in Bookmarksgrove</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end welcome -->
+    <!-- end slide
+    start feedback -->
+    <div class="container-fluid">
+        <div class="row fr-feedback">
+            <div class="members text-center col-md-3 col-xl-3 col-12">
+                <i class="fa-solid fa-users-line"></i>
+                <p class="pt-4">98,087</p>
+                <p class="text-uppercase"
+                    style=" font-family: 'Lora', serif;
+                    font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 700; color: rgba(0, 0, 0, 0.7);">Members</p>
+            </div>
+            <div class="pastors text-center col-md-3 col-xl-3 col-12">
+                <i class="fa-solid fa-user"></i>
+                <p class="pt-4">309</p>
+                <p class="text-uppercase"
+                    style=" font-family: 'Lora', serif;
+                    font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 700; color: rgba(0, 0, 0, 0.7)">Pastors</p>
+            </div>
+            <div class="donate-money text-center col-md-3 col-xl-3 col-12">
+                <i class="fa-regular fa-money-bill-1"></i>
+                <p class="pt-4">9,350,500</p>
+                <p class="text-uppercase" style=" font-family: 'Lora', serif;
+                font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 700; color: rgba(0, 0, 0, 0.7)">
+                    Donation</p>
+            </div>
+            <div class="churches text-center col-md-3 col-xl-3 col-12">
+                <i class="fa-solid fa-house-chimney"></i>
+                <p class="pt-4">206</p>
+                <p class="text-uppercase" style=" font-family: 'Lora', serif;
+                font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 700; color: rgba(0, 0, 0, 0.7)">
+                    Churches</p>
+            </div>
+        </div>
+    </div>
+    <!-- end feedback
+    start service -->
+    <div class="container">
+        <div class=" row justify-content-center pb-5 p112-sermons-top">
+            <div class=" heading-section text-center ftco-animate fadeInUp ftco-animated">
+                <div class="sub-heading">
+                    <div class="space-letter">
+                        <p>Services</p>
+                    </div>
+                    <h2>Christian Church Services</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+        </div>
+        <div class="row p112-service-buttons">
+            <div class="row icon-service">
+                <div class="daily-prayer col-md text-center">
+                    <i class="fa-solid fa-hands-praying"></i>
+                    <h3>Daily Prayers</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="Continous-Teaching col-md text-center">
+                    <i class="fa-solid fa-book-quran"></i>
+                    <h3>Continous Teaching</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="Set-of-Sermons col-md text-center">
+                    <i class="fa-solid fa-gopuram"></i>
+                    <h3>Set of Sermons</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="wedding col-md text-center">
+                    <i class="fa-solid fa-ring"></i>
+                    <h3>Wedding</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div class="community-helpers col-md text-center">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                    <h3>Community Helpers</h3>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end service
+    start sermons -->
+    <div class="container-fluid bg-light p112-sermons-top">
+        <div class="justify-content-center pb-5 pt-5 ">
+            <div class=" heading-section text-center">
+                <div class="sub-heading p112-sermons">
+                    <div class="space-letter">
+                        <p>Services</p>
+                    </div>
+                    <h2>Christian Church Sermons</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-5">
+            <div class="row text-center">
+                <div class="col-md-4 col-xl-4 col-12">
+                    <div class="frame-sermons">
+                        <div class="img frame-sermons-item d-flex align-items-center justify-content-center position-relative"
+                            style="background-image: url(./assets/img/images/sermon-1.jpg);">
+                            <div class=" border-light">
+                                <div class="text-content p-4 text-center">
+                                    <span>by pastor:</span>
+                                    <h3 style="font-family: Great Vibes, cursive; color: #fff;">Jerry Simon</h3>
+                                    <p class="bt-sermons">
+                                        <a href="https://vimeo.com/45830194"
+                                            class="btn-custom mb-2 p-2 text-center popup-vimeo" style="color: #fff"><i
+                                                class="fa-solid fa-play"></i> Watch</a>
+                                        <a href="#" class="btn-custom p-2 text-center" style="color: #fff;"><i
+                                                class="fa-solid fa-download pe-2"></i> Download</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h2 class="mb-0"><a href="sermon.html"
+                                    style="color:#000000; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 400;">Let
+                                    the Sunset Inspire You</a></h2>
+                            <div class="meta">
+                                <p class="mb-0">
+                                    <span>July 01, 2019</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12">
+                    <div class="frame-sermons">
+                        <div class="img frame-sermons-item d-flex align-items-center justify-content-center position-relative"
+                            style="background-image: url(./assets/img/images/sermon-2.jpg); width: 100%;">
+                            <div class="border-light">
+                                <div class="text-content p-4 text-center">
+                                    <span>by pastor:</span>
+                                    <h3 style="font-family: Great Vibes, cursive; color: #fff;">Jerry Simon</h3>
+                                    <p class="bt-sermons">
+                                        <a href="https://vimeo.com/45830194"
+                                            class="btn-custom mb-2 p-2 text-center popup-vimeo" style="color: #fff"><i
+                                                class="fa-solid fa-play"></i></span> Watch</a>
+                                        <a href="#" class="btn-custom p-2 text-center" style="color: #fff;"><i
+                                                class="fa-solid fa-download pe-2"></i> Download</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h2 class="mb-0"><a href="sermon.html"
+                                    style="color:#000000; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 400;">Developing
+                                    Spiritual Mentality</a></h2>
+                            <div class="meta">
+                                <p class="mb-0">
+                                    <span>July 01, 2019</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12">
+                    <div class="frame-sermons">
+                        <div class="img frame-sermons-item d-flex align-items-center justify-content-center position-relative"
+                            style="background-image: url(./assets/img/images/sermon-3.jpg); width: 100%;">
+                            <div class="border-light">
+                                <div class="text-content p-4 text-center">
+                                    <span>by pastor:</span>
+                                    <h3 style="font-family: Great Vibes, cursive; color: #fff;">Jerry Simon</h3>
+                                    <p class="bt-sermons">
+                                        <a href="https://vimeo.com/45830194"
+                                            class="btn-custom mb-2 p-2 text-center popup-vimeo" style="color: #fff"><i
+                                                class="fa-solid fa-play"></i></span> Watch</a>
+                                        <a href="#" class="btn-custom p-2 text-center" style="color: #fff;"><i
+                                                class="fa-solid fa-download pe-2"></i> Download</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h2 class="mb-0"><a href="sermon.html"
+                                    style="color:#000000; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 400;">Let
+                                    the Bible Motivate You</a></h2>
+                            <div class="meta">
+                                <p class="mb-0">
+                                    <span>July 01, 2019</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12">
+                    <div class="frame-sermons">
+                        <div class="img frame-sermons-item d-flex align-items-center justify-content-center position-relative"
+                            style="background-image: url(./assets/img/images/sermon-4.jpg); width: 100%;">
+                            <div class="border-light">
+                                <div class="text-content p-4 text-center">
+                                    <span>by pastor:</span>
+                                    <h3 style="font-family: Great Vibes, cursive; color: #fff;">Jerry Simon</h3>
+                                    <p class="bt-sermons">
+                                        <a href="https://vimeo.com/45830194"
+                                            class="btn-custom mb-2 p-2 text-center popup-vimeo" style="color: #fff"><i
+                                                class="fa-solid fa-play"></i></span> Watch</a>
+                                        <a href="#" class="btn-custom p-2 text-center" style="color: #fff;"><i
+                                                class="fa-solid fa-download pe-2"></i> Download</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h2 class="mb-0"><a href="sermon.html"
+                                    style="color:#000000; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 400;">Let
+                                    the Sunset Inspire You</a></h2>
+                            <div class="meta">
+                                <p class="mb-0">
+                                    <span>July 01, 2019</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12">
+                    <div class="frame-sermons">
+                        <div class="img frame-sermons-item d-flex align-items-center justify-content-center position-relative"
+                            style="background-image: url(./assets/img/images/sermon-5.jpg); width: 100%;">
+                            <div class="border-light">
+                                <div class="text-content p-4 text-center">
+                                    <span>by pastor:</span>
+                                    <h3 style="font-family: Great Vibes, cursive; color: #fff;">Jerry Simon</h3>
+                                    <p class="bt-sermons">
+                                        <a href="https://vimeo.com/45830194"
+                                            class="btn-custom mb-2 p-2 text-center popup-vimeo" style="color: #fff"><i
+                                                class="fa-solid fa-play"></i></span> Watch</a>
+                                        <a href="#" class="btn-custom p-2 text-center" style="color: #fff;"><i
+                                                class="fa-solid fa-download pe-2"></i> Download</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h2 class="mb-0"><a href="sermon.html"
+                                    style="color:#000000; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 400;">Developing
+                                    Spiritual Mentality</a></h2>
+                            <div class="meta">
+                                <p class="mb-0">
+                                    <span>July 01, 2019</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12">
+                    <div class="frame-sermons">
+                        <div class="img frame-sermons-item d-flex align-items-center justify-content-center position-relative"
+                            style="background-image: url(./assets/img/images/sermon-6.jpg); width: 100%;">
+                            <div class="border-light">
+                                <div class="text-content p-4 text-center">
+                                    <span>by pastor:</span>
+                                    <h3 style="font-family: Great Vibes, cursive; color: #fff;">Jerry Simon</h3>
+                                    <p class="bt-sermons">
+                                        <a href="https://vimeo.com/45830194"
+                                            class="btn-custom mb-2 p-2 text-center popup-vimeo" style="color: #fff"><i
+                                                class="fa-solid fa-play"></i></span> Watch</a>
+                                        <a href="#" class="btn-custom p-2 text-center" style="color: #fff;"><i
+                                                class="fa-solid fa-download pe-2"></i> Download</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h2 class="mb-0"><a href="sermon.html"
+                                    style="color:#000000; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 400;">Let
+                                    the Bible Motivate You</a></h2>
+                            <div class="meta">
+                                <p class="mb-0">
+                                    <span>July 01, 2019</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sermon
+    start event -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="img-events img" style="background-image: url(./assets/img/images/bg_3.jpg); height: 400px;">
+            </div>
+            <div class="container-fluid content-events">
+                <div class="justify-content-center pb-5 pt-5 ">
+                    <div class="container-fluid px-4 d-flex justify-content-center" style="padding-top: 80px;">
+                        <div class="row justify-content-center pb-5">
+                            <div class="col-md-12 heading-section text-center">
+                                <span class="subheading" style="color: #fff;">Events</span>
+                                <h2 class="mb-5" style="color: #fff;">Upcoming Events</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-xs-event">
+                        <div class="col-md-12 col-lg-6 col-xl-4 ">
+                            <div class="event-wrap d-flex mb-4">
+                                <div class="img" style="background-image: url(./assets/img/images/event-1.jpg);"></div>
+                                <div class="text p-4 d-flex align-items-center">
+                                    <div class=" frame-event">
+                                        <span class="time bg-warning text-light"
+                                            style="display:block; padding-left: 40px; margin-left: -35px;">8:30am -
+                                            11:30am</span>
+                                        <h3><a href="#">Sharing Our Faith &amp; Gospel</a></h3>
+                                        <div class="meta">
+                                            <p><i class="fa-solid fa-user"></i> by pastor: <a href="#"
+                                                    style="color: #ffd615;">Jerry Simon</a>
+                                            </p>
+                                            <p><span class="icon-location"></span> 203 Fake St. Mountain View, San
+                                                Francisco,
+                                                California, USA</p>
+                                            <p class="mb-0"><a href="#" class="btn btn-primary"
+                                                    style="border-radius: 100px; background-color: #ffd615; border: none;">Join
+                                                    Us</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <div class="event-wrap d-flex mb-4">
+                                <div class="img" style="background-image: url(./assets/img/images/event-2.jpg);"></div>
+                                <div class="text p-4 d-flex align-items-center">
+                                    <div class=" frame-event">
+                                        <span class="time bg-warning text-light"
+                                            style="display:block; padding-left: 40px; margin-left: -35px;">8:30am -
+                                            11:30am</span>
+                                        <h3><a href="#">Sharing Our Faith &amp; Gospel</a></h3>
+                                        <div class="meta">
+                                            <p><i class="fa-solid fa-user"></i> by pastor: <a href="#"
+                                                    style="color: #ffd615;">Jerry Simon</a>
+                                            </p>
+                                            <p><span class="icon-location"></span> 203 Fake St. Mountain View, San
+                                                Francisco,
+                                                California, USA</p>
+                                            <p class="mb-0"><a href="#" class="btn btn-primary"
+                                                    style="border-radius: 100px; background-color: #ffd615; border: none;">Join
+                                                    Us</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <div class="event-wrap d-flex mb-4">
+                                <div class="img" style="background-image: url(./assets/img/images/event-3.jpg);"></div>
+                                <div class="text p-4 d-flex align-items-center">
+                                    <div class=" frame-event">
+                                        <span class="time bg-warning text-light"
+                                            style="display:block; padding-left: 40px; margin-left: -35px;">8:30am -
+                                            11:30am</span>
+                                        <h3><a href="#">Sharing Our Faith &amp; Gospel</a></h3>
+                                        <div class="meta">
+                                            <p><i class="fa-solid fa-user"></i> by pastor: <a href="#"
+                                                    style="color: #ffd615;">Jerry Simon</a>
+                                            </p>
+                                            <p><span class="icon-location"></span> 203 Fake St. Mountain View, San
+                                                Francisco,
+                                                California, USA</p>
+                                            <p class="mb-0"><a href="#" class="btn btn-primary"
+                                                    style="border-radius: 100px; background-color: #ffd615; border: none;">Join
+                                                    Us</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <div class="event-wrap d-flex mb-4">
+                                <div class="img" style="background-image: url(./assets/img/images/event-4.jpg);"></div>
+                                <div class="text p-4 d-flex align-items-center">
+                                    <div class=" frame-event">
+                                        <span class="time bg-warning text-light"
+                                            style="display:block; padding-left: 40px; margin-left: -35px;">8:30am -
+                                            11:30am</span>
+                                        <h3><a href="#">Sharing Our Faith &amp; Gospel</a></h3>
+                                        <div class="meta">
+                                            <p><i class="fa-solid fa-user"></i> by pastor: <a href="#"
+                                                    style="color: #ffd615;">Jerry Simon</a>
+                                            </p>
+                                            <p><span class="icon-location"></span> 203 Fake St. Mountain View, San
+                                                Francisco,
+                                                California, USA</p>
+                                            <p class="mb-0"><a href="#" class="btn btn-primary"
+                                                    style="border-radius: 100px; background-color: #ffd615; border: none;">Join
+                                                    Us</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <div class="event-wrap d-flex mb-4">
+                                <div class="img" style="background-image: url(./assets/img/images/event-5.jpg);"></div>
+                                <div class="text p-4 d-flex align-items-center">
+                                    <div class=" frame-event">
+                                        <span class="time bg-warning text-light"
+                                            style="display:block; padding-left: 40px; margin-left: -35px;">8:30am -
+                                            11:30am</span>
+                                        <h3><a href="#">Sharing Our Faith &amp; Gospel</a></h3>
+                                        <div class="meta">
+                                            <p><i class="fa-solid fa-user"></i> by pastor: <a href="#"
+                                                    style="color: #ffd615;">Jerry Simon</a>
+                                            </p>
+                                            <p><span class="icon-location"></span> 203 Fake St. Mountain View, San
+                                                Francisco,
+                                                California, USA</p>
+                                            <p class="mb-0"><a href="#" class="btn btn-primary"
+                                                    style="border-radius: 100px; background-color: #ffd615; border: none;">Join
+                                                    Us</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <div class="event-wrap d-flex mb-4">
+                                <div class="img" style="background-image: url(./assets/img/images/event-6.jpg);"></div>
+                                <div class="text p-4 d-flex align-items-center">
+                                    <div class=" frame-event">
+                                        <span class="time bg-warning text-light"
+                                            style="display:block; padding-left: 40px; margin-left: -35px;">8:30am -
+                                            11:30am</span>
+                                        <h3><a href="#">Sharing Our Faith &amp; Gospel</a></h3>
+                                        <div class="meta">
+                                            <p><i class="fa-solid fa-user"></i> by pastor: <a href="#"
+                                                    style="color: #ffd615;">Jerry Simon</a>
+                                            </p>
+                                            <p><span class="icon-location"></span> 203 Fake St. Mountain View, San
+                                                Francisco,
+                                                California, USA</p>
+                                            <p class="mb-0"><a href="#" class="btn btn-primary"
+                                                    style="border-radius: 100px; background-color: #ffd615; border: none;">Join
+                                                    Us</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end event
+    start donate charity -->
+    <div class="frame-producedonate" id="causes-section">
+        <div class="container mb-5">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-12 heading-section text-center ">
+                    <span class="subheading">Donate Charity</span>
+                    <h2 class="mb-5">Causes Needs Our Help</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="cause-entry ftco-animate fadeInUp ftco-animated">
+                        <a href="#" class="img" style="background-image: url(./assets/img/images/cause-1.jpg);"></a>
+                        <div class="text p-3">
+                            <h3><a href="cause.html" class="text-dark">Health care, Food</a></h3>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:75%;">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                            <p class="donate"><span class="price">$80,000</span> <span class="target-goal">Target</span>
+                                / <span class="price">$55,000</span> <span class="target-goal">Goal</span></p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary.
+                            </p>
+                            <p><a href="#" class="progress-btn btn btn-primary">Donate Now!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="cause-entry ftco-animate fadeInUp ftco-animated">
+                        <a href="#" class="img" style="background-image: url(./assets/img/images/cause-2.jpg);"></a>
+                        <div class="text p-3">
+                            <h3><a href="cause.html" class="text-dark">Health care, Food</a></h3>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:75%;">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                            <p class="donate"><span class="price">$80,000</span> <span class="target-goal">Target</span>
+                                / <span class="price">$55,000</span> <span class="target-goal">Goal</span></p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary.
+                            </p>
+                            <p><a href="#" class="progress-btn btn btn-primary">Donate Now!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="cause-entry ftco-animate fadeInUp ftco-animated">
+                        <a href="#" class="img" style="background-image: url(./assets/img/images/cause-3.jpg);"></a>
+                        <div class="text p-3">
+                            <h3><a href="cause.html" class="text-dark">Health care, Food</a></h3>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:75%;">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                            <p class="donate"><span class="price">$80,000</span> <span class="target-goal">Target</span>
+                                / <span class="price">$55,000</span> <span class="target-goal">Goal</span></p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary.
+                            </p>
+                            <p><a href="#" class="progress-btn btn btn-primary">Donate Now!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="cause-entry ftco-animate fadeInUp ftco-animated">
+                        <a href="#" class="img" style="background-image: url(./assets/img/images/cause-4.jpg);"></a>
+                        <div class="text p-3">
+                            <h3><a href="cause.html" class="text-dark">Health care, Food</a></h3>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:75%;">
+                                    <span>40%</span>
+                                </div>
+                            </div>
+                            <p class="donate"><span class="price">$80,000</span> <span class="target-goal">Target</span>
+                                / <span class="price">$55,000</span> <span class="target-goal">Goal</span></p>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary.
+                            </p>
+                            <p><a href="#" class="progress-btn btn btn-primary">Donate Now!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- donate-banner -->
+    <div class="frame-danatebanner-child">
+        <div class="row mt-4 justify-content-end frame-danatebanner">
+            <div class="col-11 col-md-10 col-xl-9">
+                <div class="donated-intro bg-dark p-4 p-md-5">
+                    <h2 style="color: #fff;">Donation so far <span style="color: #ffd615;">$</span><strong
+                            class="number" style="color: #ffd615;" data-number="9891000">9,891,000</strong></h2>
+                    <p style="color: #fff;">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live
+                        the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                    <p><a href="#" class="btn btn-dark px-4 py-3" style="border-radius: 60px;">Donate now!</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ftco-daily-verse img " style="background-image: url(./assets/img/images/bg_4.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-2">
+                                <div class="icon">
+                                    <i class="fa-solid fa-church" style="color: #ffd615; font-size: 100px;"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10 daily-verse pl-md-5">
+                                <span class="subheading text-light">Jesus Christ Said:</span>
+                                <h3 style="color: #fff;">"16 For God so loved the world, that he gave his only begotten
+                                    Son, that whosoever
+                                    believeth in him should not perish, but have everlasting life."</h3>
+                                <h4 class="h5 mt-4 font-weight-bold text-light"><span>Bible:</span> John 3:16 KJV</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end donate charity -->
+    <!-- start blog  -->
+    <div class="bg-light m-xs-blog" id="blog-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 heading-section text-center">
+                    <span class="subheading">Blog</span>
+                    <h2 class="mb-4">Read the Latest Blog</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 col-xl-4 col-12 p-blog-parent pb-4">
+                    <div class="blog-entry justify-content-end">
+                        <div class="img" style="background-image: url(./assets/img/images/image_1.jpg); height: 350px;">
+                        </div>
+                        <div class="text float-right d-block">
+                            <div class="d-flex align-items-center pt-2 mb-4 p-blog-child">
+                                <div class="one mr-2 ps-3">
+                                    <span class="day" style="font-size: 50px; color: #fff;">04</span>
+                                </div>
+                                <div class="two-blog">
+                                    <span class="yr" style="font-size: 16px; color: #fff;">2019</span>
+                                    <span class="mos" style="font-size: 16px; color: #fff;">June</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="single.html" style="color: #000000;">Why Lead Generation is Key
+                                    for Business
+                                    Growth</a>
+                            </h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4 meta">
+                                <p class="mb-0 "><a href="#" class="btn btn-warning" style="border-radius: 60px;">Read
+                                        More</a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="#" class="mr-2 text-dark">Admin</a>
+                                    <a href="#" class="meta-chat text-dark"><span class="icon-chat"></span> 3</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12 p-blog-parent pb-4">
+                    <div class="blog-entry justify-content-end">
+                        <div class="img" style="background-image: url(./assets/img/images/image_2.jpg); height: 350px;">
+                        </div>
+                        <div class="text float-right d-block">
+                            <div class="d-flex align-items-center pt-2 mb-4 p-blog-child">
+                                <div class="one mr-2 ps-3">
+                                    <span class="day" style="font-size: 50px; color: #fff;">04</span>
+                                </div>
+                                <div class="two-blog">
+                                    <span class="yr" style="font-size: 16px; color: #fff;">2019</span>
+                                    <span class="mos" style="font-size: 16px; color: #fff;">June</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="single.html" style="color: #000000;">Why Lead Generation is Key
+                                    for Business
+                                    Growth</a>
+                            </h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4 meta">
+                                <p class="mb-0 "><a href="#" class="btn btn-warning" style="border-radius: 60px;">Read
+                                        More</a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="#" class="mr-2 text-dark">Admin</a>
+                                    <a href="#" class="meta-chat text-dark"><span class="icon-chat"></span> 3</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 col-12 p-blog-parent pb-4">
+                    <div class="blog-entry justify-content-end">
+                        <div class="img" style="background-image: url(./assets/img/images/image_3.jpg); height: 350px;">
+                        </div>
+                        <div class="text float-right d-block">
+                            <div class="d-flex align-items-center pt-2 mb-4 p-blog-child">
+                                <div class="one mr-2 ps-3">
+                                    <span class="day" style="font-size: 50px; color: #fff;">04</span>
+                                </div>
+                                <div class="two-blog">
+                                    <span class="yr" style="font-size: 16px; color: #fff;">2019</span>
+                                    <span class="mos" style="font-size: 16px; color: #fff;">June</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="single.html" style="color: #000000;">Why Lead Generation is Key
+                                    for Business
+                                    Growth</a>
+                            </h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4 meta">
+                                <p class="mb-0 "><a href="#" class="btn btn-warning" style="border-radius: 60px;">Read
+                                        More</a></p>
+                                <p class="ml-auto mb-0">
+                                    <a href="#" class="mr-2 text-dark">Admin</a>
+                                    <a href="#" class="meta-chat text-dark"><span class="icon-chat"></span> 3</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end blog
+    start pastor -->
+    <div class="" id="pastor-section">
+        <div class="container-fluid pt-5 pb-5">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-6 heading-section text-center ">
+                    <span class="subheading">Pastors</span>
+                    <h2 class="mb-4">Church Pastor</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="staff">
+                        <div class="img-wrap">
+                            <div class="img"
+                                style="background-image: url(./assets/img/images/staff-1.jpg); height: 350px;"></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-3 ">
+                            <div>
+                                <h3 class="mb-2">Lloyd Wilson</h3>
+                                <span class="position mb-4">Lead Pastor</span>
+                                <div class="faded">
+                                    <ul class="d-flex text-center">
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-facebook-f"></i>>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-google-plus-g"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-instagram"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="staff">
+                        <div class="img-wrap">
+                            <div class="img"
+                                style="background-image: url(./assets/img/images/staff-2.jpg); height: 350px;"></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-3 text-center">
+                            <div>
+                                <h3 class="mb-2">Lloyd Wilson</h3>
+                                <span class="position mb-4">Lead Pastor</span>
+                                <div class="faded">
+                                    <ul class="d-flex text-center">
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-facebook-f"></i>>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-google-plus-g"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-instagram"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="staff">
+                        <div class="img-wrap">
+                            <div class="img"
+                                style="background-image: url(./assets/img/images/staff-3.jpg); height: 350px;"></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-3 text-center">
+                            <div>
+                                <h3 class="mb-2">Lloyd Wilson</h3>
+                                <span class="position mb-4">Lead Pastor</span>
+                                <div class="faded">
+                                    <ul class="d-flex text-center">
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-facebook-f"></i>>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-google-plus-g"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-instagram"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-12">
+                    <div class="staff">
+                        <div class="img-wrap">
+                            <div class="img"
+                                style="background-image: url(./assets/img/images/staff-4.jpg); height: 350px;"></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-3 text-center">
+                            <div>
+                                <h3 class="mb-2">Lloyd Wilson</h3>
+                                <span class="position mb-4">Lead Pastor</span>
+                                <div class="faded">
+                                    <ul class="d-flex text-center">
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-twitter"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-facebook-f"></i>>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-google-plus-g"></i>
+                                        </li>
+                                        <li class="ftco-animate pe-2"><i class="fa-brands fa-instagram"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end pastor
+    start contact -->
+    <div class="pt-4 color-contact" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ">
+                    <span class="subheading">Contact</span>
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row block-9">
+                <div class="col-md-7 order-md-last d-flex">
+                    <form action="#" class="bg-light p-4 p-md-5 contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group pt-4">
+                            <input type="submit" value="Send Message" class="btn btn-warning py-3 px-5"
+                                style="border-radius: 60px;">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 d-flex">
+                    <div class="row d-flex contact-info mb-5">
+                        <div class="col-md-12 ">
+                            <div class="box p-2 px-3 bg-light d-flex">
+                                <div class="icon mr-3">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h3 class="mb-3 ps-3">Address</h3>
+                                    <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="box p-2 px-3 bg-light d-flex">
+                                <div class="icon mr-3">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h3 class="mb-3 ps-3">Contact Number</h3>
+                                    <p><a href="tel://1234567920" style="color: #ffd615;">+ 1235 2355 98</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="box p-2 px-3 bg-light d-flex">
+                                <div class="icon mr-3">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <div>
+                                    <h3 class="mb-3 ps-3">Email Address</h3>
+                                    <p><a href="mailto:info@yoursite.com" style="color: #ffd615;">info@yoursite.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="box p-2 px-3 bg-light d-flex">
+                                <div class="icon mr-3">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <div>
+                                    <h3 class="mb-3 ps-3">Website</h3>
+                                    <p><a href="#" style="color: #ffd615;">yoursite.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+    <!-- start map -->
+    <div style="background-image: url(./assets/img/images/global.jpg); height: 400px;">
+        <div class="content-map container-fluid pt-4" style="width: 60vh;">
+            <div class="row bg-dark">
+                <div class="">
+                    <div>
+                        <h2 class="text-light">Google</h2>
+                        <p class="text-light">This pagpe can't load Google Map correctly</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="text-light">Do you own this page</p>
+                        <a href="#" style="background-color: #fff; width: 10vh; text-align: center; margin-bottom: 10px; border-radius: 10px; text-transform: uppercase; font-weight: 600;"> OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end map -->
+    <!-- start gallery -->
+    <div class="mb-4 pt-5 pb-5">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center fadeInUp ftco-animated">
+                    <h3 class="subheading">Gallery</h3>
+                    <h2 class="mb-1">Christian Church Photo Gallery</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xl-3 col-12">
+                    <a href="images/gallery-1.jpg" class="gallery image-popup img d-flex align-items-center"
+                        style="background-image: url(./assets/img/images/gallery-1.jpg); height: 400px;">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xl-3 col-12">
+                    <a href="images/gallery-2.jpg" class="gallery image-popup img d-flex align-items-center"
+                        style="background-image: url(./assets/img/images/gallery-2.jpg); height: 400px;">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xl-3 col-12">
+                    <a href="images/gallery-3.jpg" class="gallery image-popup img d-flex align-items-center"
+                        style="background-image: url(./assets/img/images/gallery-3.jpg); height: 400px;">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-xl-3 col-12">
+                    <a href="images/gallery-4.jpg" class="gallery image-popup img d-flex align-items-center"
+                        style="background-image: url(./assets/img/images/gallery-4.jpg); height: 400px;">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end gallary -->
+    <!-- start footer -->
+    <footer class="bg-dark pt-4">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2 logo" style="color: #fff;"><span style="color: #ffd615;">Christian</span> Church</h2>
+                        <p class="text-light">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <ul class="d-flex list-unstyled float-md-left float-lft mt-5">
+                            <li class="ps-2 text-light"><i class="fa-brands fa-twitter"></i></li>
+                            <li class="ps-2 text-light"><i class="fa-brands fa-facebook-f"></i></li>
+                            <li class="ps-2 text-light"><i class="fa-brands fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class=" mb-4 ml-md-5">
+                        <h2 class="text-light">About</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span >Staff</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span >Beliefs</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span >History</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span >Mission</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span class="ion-ios-arrow-forward mr-3"></span>Wedding
+                                    &amp; Funerals</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span class="ion-ios-arrow-forward mr-3"></span>Jobs
+                                    &amp; Internship</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span>Fellowships</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class=" mb-4 ml-md-5">
+                        <h2 class="text-light">Connect</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-1 d-block text-light"><span class="ion-ios-arrow-forward mr-3"></span>Home
+                                    Groups</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span>Recovery Groups</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3 "></span>Memberships</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span>Children &amp; Students</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span>Volunteer</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span>Counseling</a></li>
+                            <li><a href="#" class="py-1 d-block text-light"><span
+                                        class="ion-ios-arrow-forward mr-3"></span>Assistance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class=" mb-4">
+                        <h2 class="text-light">Service Hours</h2>
+                        <div class="opening-hours">
+                            <p class="text-light">Saturday Prayer Meeting: <span class="mb-3" style="color: #ffd615;">10:00 am to 11:30 am</span></p>
+                            <p class="text-light">Sunday Service: <span class="mb-3" style="color: #ffd615;">8:30 am to 11:30 am</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="text-light">
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script>2023 All rights reserved | This
+                        template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
